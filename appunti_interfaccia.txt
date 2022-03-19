@@ -1,0 +1,18 @@
+verion 1.1
+
+Progettazione di un'interfaccia Java - Rubrica
+
+la classe interfaccia (principale): 
+	public class Rubrica implements ? {...}
+
+metodo che ritorna TUTTE le informazioni di un contatto richiesto dall'utente: 
+	public Contatti search(String){...}
+
+Classe collegata al metodo (classe comune): 
+	public class Contatti {
+	  //lista dei contatti con le relative informazioni
+
+	  /*
+	    esso contiente: numero di telefono, cognome, nome, e-mail...	
+	  */
+	}
