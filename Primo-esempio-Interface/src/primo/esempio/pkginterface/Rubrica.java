@@ -4,10 +4,6 @@
  */
 package primo.esempio.pkginterface;
 
-/**
- *
- * @author User
- */
 public class Rubrica {
     
 }

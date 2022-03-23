@@ -4,17 +4,12 @@
  */
 package primo.esempio.pkginterface;
 
-/**
- *
- * @author User
- */
 public class PrimoEsempioInterface {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        
     }
     
 }
