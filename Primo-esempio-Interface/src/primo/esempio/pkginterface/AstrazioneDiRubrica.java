@@ -4,10 +4,8 @@
  */
 package primo.esempio.pkginterface;
 
-/**
- *
- * @author User
- */
 public interface AstrazioneDiRubrica {
     
+    public Contatto cerca(String cognome);
+
 }

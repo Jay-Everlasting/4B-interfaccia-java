@@ -4,6 +4,18 @@
  */
 package primo.esempio.pkginterface;
 
-public class Rubrica {
+import java.util.ArrayList;
+
+public class Rubrica implements AstrazioneDiRubrica{
+    private ArrayList<Contatto> contatti;
+    //fare costruttore, toString, get
     
+    public Contatto cerca(String cognome){
+        Contatto c;
+        c = null;
+        
+        
+        
+        return c;
+    }
 }
