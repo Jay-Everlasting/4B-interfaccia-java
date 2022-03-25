@@ -22,7 +22,7 @@ public class Contatto {
 
     @Override
     public String toString() {
-        return "Contatto{" + "nome=" + nome + ", cognome=" + cognome + ", telefono=" + telefono + ", email=" + email + '}';
+        return "Contatto: " + this.nome + " " + this.cognome + " | Telefono: " + this.telefono + " | Email: " + this.email;
     }
 
     @Override
