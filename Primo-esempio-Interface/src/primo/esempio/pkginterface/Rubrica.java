@@ -30,6 +30,6 @@ public class Rubrica implements AstrazioneDiRubrica{
 
     @Override
     public String toString() {
-        return "Rubrica{" + "contatti=" + contatti + '}';
+        return "" + contatti;
     }
 }

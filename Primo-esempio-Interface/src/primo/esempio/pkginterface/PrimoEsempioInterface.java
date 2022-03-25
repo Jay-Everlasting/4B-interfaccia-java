@@ -61,6 +61,8 @@ public class PrimoEsempioInterface {
         } else {
             System.out.println("Non ho trovato un contatto con cognome " + "Bianchi");
         }
+        
+        System.out.println("\nTutta la rubrica : \n" + r.toString());
 
     }
 }
