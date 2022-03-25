@@ -9,13 +9,27 @@ import java.util.ArrayList;
 public class Rubrica implements AstrazioneDiRubrica{
     private ArrayList<Contatto> contatti;
     //fare costruttore, toString, get
-    
-    public Contatto cerca(String cognome){
+    Rubrica(){
+        this.contatti=new ArrayList();
+    }
+    public void aggiungi(Contatto c){
+        contatti.add(c);
+    }
+    public Contatto cerca(String s){
         Contatto c;
-        c = null;
-        
-        
-        
-        return c;
+        int i;
+        c=null;
+        for(i=0;i<contatti.size();i++){
+            c=contatti.get(i);
+            if(c.getCognome().equals(s)){
+                return c;
+            }
+        }   
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return "Rubrica{" + "contatti=" + contatti + '}';
     }
 }
