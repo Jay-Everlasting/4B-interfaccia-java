@@ -31,11 +31,11 @@ public class Contatto implements Comparable{
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 11 * hash + Objects.hashCode(this.nome);
-        hash = 11 * hash + Objects.hashCode(this.cognome);
-        hash = 11 * hash + Objects.hashCode(this.telefono);
-        hash = 11 * hash + Objects.hashCode(this.email);
+        int hash = 3;
+        hash = 83 * hash + Objects.hashCode(this.nome);
+        hash = 83 * hash + Objects.hashCode(this.cognome);
+        hash = 83 * hash + Objects.hashCode(this.telefono);
+        hash = 83 * hash + Objects.hashCode(this.email);
         return hash;
     }
 
@@ -51,6 +51,18 @@ public class Contatto implements Comparable{
             return false;
         }
         final Contatto other = (Contatto) obj;
+        if (!Objects.equals(this.nome, other.nome)) {
+            return false;
+        }
+        if (!Objects.equals(this.cognome, other.cognome)) {
+            return false;
+        }
+        if (!Objects.equals(this.telefono, other.telefono)) {
+            return false;
+        }
+        if (!Objects.equals(this.email, other.email)) {
+            return false;
+        }
         return true;
     }
     
@@ -87,20 +99,10 @@ public class Contatto implements Comparable{
     public String getEmail() {
         return email;
     }
-    /*
-    public void setTelefono(String nuovoTelefono) throws Exception {
-        this.valida(this.nome, this.cognome, nuovoTelefono, this.email);
-        this.telefono=nuovoTelefono;        
-       //this.valida(this.getNome(), this.getCognome(), nuovoTelefono, this.getEmail());
-    }
-    
-    public void setEmail(String e) {
-        
-    }
-    */
 
     @Override
     public int compareTo(Object o) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
 }
