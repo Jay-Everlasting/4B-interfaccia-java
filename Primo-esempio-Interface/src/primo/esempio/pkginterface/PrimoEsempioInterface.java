@@ -1,67 +1,26 @@
 /*
     * Lis Adel - 4Binf
-*/
+ */
 package primo.esempio.pkginterface;
 
 public class PrimoEsempioInterface {
 
     public static void main(String[] args) throws Exception {
-
-        Contatto c;
-        Rubrica r;
-        r = new Rubrica();
-
-        try {
-            c = new Contatto("Mario", "Rossi", "0255600511", "mario.rossi@uuu.it");
-            r.aggiungi(c);
-        } catch (NullPointerException ex) {
-            System.out.println("Errore " + ex.getMessage());
-        } catch (Exception ex){
-            System.out.println("Errore " + ex);
-        }
+        Integer comp;
+        Contatto c,d;
+        c = null;
+        d = null;
+        comp = 0;
         
-        try {
-            c = new Contatto("Filippo", "Primo", "3469875246", "spagna.solomia@ii.sp");
-            r.aggiungi(c);
-        } catch (NullPointerException ex) {
-            System.out.println("Errore " + ex.getMessage());
-        } catch (Exception ex){
-            System.out.println("Errore " + ex);
-        }
+        c = new Contatto ("Matteo", "Re", "6969696934", "sexy.boy@hotmail.ph");
+        d = new Contatto ("Alex", "Bragantini", "1234567890", "tonno.seduto@gmail.com");
+        c = new Contatto ("Matteo", "Re", "6969696934", "sexy.boy@hotmail.ph");
+        c = new Contatto ("Matteo", "Re", "6969696934", "sexy.boy@hotmail.ph");
+        c = new Contatto ("Matteo", "Re", "6969696934", "sexy.boy@hotmail.ph");
+        c = new Contatto ("Matteo", "Re", "6969696934", "sexy.boy@hotmail.ph");
+               
+        comp = c.compareTo(d);
+        System.out.println(comp);
         
-        try {
-            c = new Contatto("Anastasia", "BellaDonna", "0000222544", "rossetto.rosso@xxx.rs");
-            r.aggiungi(c);
-        } catch (NullPointerException ex) {
-            System.out.println("Errore " + ex.getMessage());
-        } catch (Exception ex){
-            System.out.println("Errore " + ex);
-        }
-        
-        try {
-            c = new Contatto("Sebastian", "Reckah", "5551234895", "greyhat.hacker@hotmail.hk");
-            r.aggiungi(c);
-        } catch (NullPointerException ex) {
-            System.out.println("Errore " + ex.getMessage());
-        } catch (Exception ex){
-            System.out.println("Errore " + ex);
-        }
-
-        c = r.cerca("Primo");
-        if (c != null) {
-            System.out.println("Trovato " + c.toString());
-        } else {
-            System.out.println("Non ho trovato un contatto con cognome " + "gggg");
-        }
-
-        c = r.cerca("Bicnchi");
-        if (c != null) {
-            System.out.println("Trovato " + c.toString());
-        } else {
-            System.out.println("Non ho trovato un contatto con cognome " + "Bianchi");
-        }
-        
-        System.out.println("\nTutta la rubrica : \n" + r.toString());
-
     }
 }

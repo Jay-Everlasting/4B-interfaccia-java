@@ -1,1 +1,4 @@
 In questo programma si va implementare un'interfaccia già esistente e fare varie prove.
+
+Documentazione dell'interfaccia Comparable:
+	https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html

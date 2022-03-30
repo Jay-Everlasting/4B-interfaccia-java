@@ -76,7 +76,7 @@ public class Contatto implements Comparable{
             throw new NullPointerException("telefono null");
         if(email==null)
             throw new NullPointerException("email null");
-        if(telefono.length() != 11){
+        if(telefono.length() != 10){
             throw new IllegalArgumentException("lunghezza numero di telefono errata");
         }
         if(!email.contains("@")){
@@ -100,8 +100,8 @@ public class Contatto implements Comparable{
         return email;
     }
 
-    @Override
-    public int compareTo(Object o) {
+    //@Override
+    public int compareTo(Contatto o) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
