@@ -1,3 +1,7 @@
+/*
+    * Lis Adel - 4Binf
+*/
+
 package primo.esempio.pkginterface;
 
 public interface AstrazioneDiRubrica {

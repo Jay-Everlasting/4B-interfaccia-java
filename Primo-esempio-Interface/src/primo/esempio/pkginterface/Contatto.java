@@ -1,6 +1,9 @@
 /*
 Classe Contatto - Contiene informazioni sui contatti (nome, cognome, telefono, email)
- */
+
+    * Lis Adel - 4Binf
+
+*/
 package primo.esempio.pkginterface;
 
 import java.util.Objects;
