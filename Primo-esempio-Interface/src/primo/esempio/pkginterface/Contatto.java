@@ -63,10 +63,12 @@ public class Contatto {
             throw new NullPointerException("telefono null");
         if(email==null)
             throw new NullPointerException("email null");
-        //manca controllo che ci sia almeno una @ nell'email
-        //manca controllo che numero di digit di numero di telefono sia <= 11 e >= non lo so
-
-
+        if(telefono.length() != 11){
+            throw new IllegalArgumentException("lunghezza numero di telefono errata");
+        }
+        if(!email.contains("@")){
+            throw new IllegalArgumentException("impostazione email errata");
+        }
     }
 
     public String getNome() {
