@@ -1,14 +1,15 @@
 /*
-Classe Contatto - Contiene informazioni sui contatti (nome, cognome, telefono, email)
 
     * Lis Adel - 4Binf
+
+In questa classe viene implementato l'interfaccia Comparable
 
 */
 package primo.esempio.pkginterface;
 
 import java.util.Objects;
 
-public class Contatto {
+public class Contatto implements Comparable{
     private String nome;
     private String cognome;
     private String telefono;
@@ -97,4 +98,9 @@ public class Contatto {
         
     }
     */
+
+    @Override
+    public int compareTo(Object o) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
