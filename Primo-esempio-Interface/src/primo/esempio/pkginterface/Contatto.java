@@ -8,7 +8,7 @@ package primo.esempio.pkginterface;
 
 import java.util.Objects;
 
-public class Contatto implements Comparable{
+public class Contatto implements Comparable<Contatto> {
     private String nome;
     private String cognome;
     private String telefono;
@@ -72,19 +72,19 @@ public class Contatto implements Comparable{
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public String getCognome() {
-        return cognome;
+        return this.cognome;
     }
 
     public String getTelefono() {
-        return telefono;
+        return this.telefono;
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
     /*
     public void setTelefono(String nuovoTelefono) throws Exception {
@@ -99,11 +99,15 @@ public class Contatto implements Comparable{
     */
 
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(Contatto o) {
         int c;
         c = 0;
+        String nuovoC, rubricaC;
         
+        nuovoC = getCognome();
+        rubricaC = o.cognome;
         
+        c = nuovoC.compareToIgnoreCase(rubricaC);
         
         return c;
     }

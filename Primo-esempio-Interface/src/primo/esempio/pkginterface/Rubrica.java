@@ -31,4 +31,28 @@ public class Rubrica implements AstrazioneDiRubrica{
     public String toString() {
         return "" + contatti;
     }
+    
+    public void posizione(Contatto c){
+        Contatto new_contact, list_contact;
+        int comp, pos;
+        
+        new_contact = c;
+        list_contact = null;
+        comp = 0;
+        pos = 0;
+        
+        if(!contatti.isEmpty()){
+            for(int i = 0; i < contatti.size(); i++){
+                list_contact = contatti.get(i);
+                comp = c.compareTo(list_contact);
+                if (comp <= 0){
+                    pos = contatti.indexOf(list_contact);
+                    contatti.add(pos, new_contact);
+                    i = contatti.size() + 1;
+                }
+            }
+        }
+        
+    }
+    
 }
