@@ -8,7 +8,7 @@ package primo.esempio.pkginterface;
 
 import java.util.Objects;
 
-public class Contatto {
+public class Contatto implements Comparable{
     private String nome;
     private String cognome;
     private String telefono;
@@ -97,4 +97,14 @@ public class Contatto {
         
     }
     */
+
+    @Override
+    public int compareTo(Object o) {
+        int c;
+        c = 0;
+        
+        
+        
+        return c;
+    }
 }
